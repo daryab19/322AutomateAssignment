@@ -10,11 +10,8 @@ jobs:
 
     steps:
       - name: Assign Issue
-        uses: octokit/request-action@v2
+        uses: actions-ecosystem/action-assign@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          request: |
-            POST /repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/assignees
-            {
-              "assignees": ["X"] darya17b
-            }
+          assignees: darya17b
+
