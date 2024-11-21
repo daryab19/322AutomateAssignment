@@ -15,7 +15,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const issue_number = context.issue.number;
-            const assignees = ['X']; // Replace X with the GitHub username of the team member
+            const assignees = ['darya17b']; // Replace X with the GitHub username of the team member
 
             try {
               const response = await github.issues.addAssignees({
