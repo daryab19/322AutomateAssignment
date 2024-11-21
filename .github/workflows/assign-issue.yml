@@ -13,4 +13,4 @@ jobs:
         uses: actions-ecosystem/action-assign@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          assignees: X # Replace X with the GitHub username of the team member
+          assignees: darya17b
