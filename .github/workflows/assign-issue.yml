@@ -10,17 +10,7 @@ jobs:
 
     steps:
       - name: Assign Issue
-        uses: actions/github-script@v6
+        uses: actions-ecosystem/action-assign@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const { owner, repo } = context.repo;
-            const issue_number = context.issue.number;
-            const assignees = ['darya17b']; // Replace X with the GitHub username of the team member
-            
-            await github.rest.issues.addAssignees({
-              owner,
-              repo,
-              issue_number,
-              assignees,
-            });
+          assignees: X # Replace X with the GitHub username of the team member
